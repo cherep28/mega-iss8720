@@ -1,0 +1,8 @@
+# Оригиналы экспортов Figma и двоичные ресурсы.
+assets/*.svg
+assets/*.png
+assets/*.ttf
+reference/*.png
+
+vendor/
+transfer/

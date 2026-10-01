@@ -1,0 +1,1018 @@
+<!doctype html>
+<html lang="ru" class="page">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>МЕГА — Аренда для бизнеса</title>
+    <link rel="stylesheet" href="assets/fonts.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="catalog-controls.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="map.css" />
+    <script src="vendor-bridge.js" defer></script>
+    <script src="vendor/swiper/swiper-bundle.min.js" defer></script>
+    <script src="vendor/panzoom/panzoom.min.js" defer></script>
+    <script src="page-config.js" defer></script>
+    <script src="page-runtime.js" defer></script>
+    <script src="dropdown.js" defer></script>
+    <script src="map-data.js" defer></script>
+    <script src="tenants.js" defer></script>
+    <script src="catalog.js" defer></script>
+    <script src="details.js" defer></script>
+    <script src="header.js" defer></script>
+    <script src="forms.js" defer></script>
+    <link rel="stylesheet" href="forms.css" />
+    <script src="map.js" defer></script>
+    <script src="footer.js" defer></script>
+  </head>
+  <body style="margin: 0">
+    <div id="mega-page" class="mega-page" data-mega-page>
+      <main>
+        <section class="hero">
+          <div class="hero__image">
+            <img src="assets/2317-806-imgRectangle1.png" alt="Торгово-развлекательный центр МЕГА" />
+          </div>
+          <header class="site-header container">
+            <div class="logo">
+              <img src="assets/2317-806-img202609011238331.png" alt="МЕГА" />
+            </div>
+            <div class="site-header__address">
+              <img src="assets/2317-806-imgBoxiconsLocationFilled.svg" alt="" />
+              <span>Благовещенск, ул. 50 Лет Октября, 61</span>
+            </div>
+            <nav aria-label="Основная навигация" class="site-header__nav">
+              <a href="#catalog">Каталог</a>
+              <a href="#mall-map">Карта</a>
+              <a href="#contacts">Контакты</a>
+            </nav>
+            <a class="site-header__phone" href="tel:+74162222222">
+              <img src="assets/2317-806-imgCarbonPhoneFilled.svg" alt="" />
+              <span>8 (4162) 222-222</span>
+            </a>
+            <button
+              class="site-header__toggle"
+              type="button"
+              aria-label="Открыть меню"
+              aria-expanded="false"
+              aria-controls="header-menu"
+            >
+              <i> </i>
+              <i> </i>
+            </button>
+            <dialog class="header-menu" id="header-menu" aria-label="Меню">
+              <button class="header-menu__close" type="button" aria-label="Закрыть меню"></button>
+              <div class="logo header-menu__logo">
+                <img src="assets/2317-806-img202609011238331.png" alt="МЕГА" />
+              </div>
+              <div class="header-menu__address">
+                <img src="assets/2317-806-imgBoxiconsLocationFilled.svg" alt="" /><span
+                  >Благовещенск,<br />ул. 50 Лет Октября, 61</span
+                >
+              </div>
+              <nav aria-label="Мобильная навигация">
+                <a href="#catalog">Каталог</a>
+                <a href="#mall-map">Карта</a>
+                <a href="#contacts">Контакты</a>
+              </nav>
+              <div class="header-menu__contact">
+                <div class="socials header-menu__socials">
+                  <a class="socials__link" href="#" data-placeholder-link
+                    ><img src="assets/2317-835-imgEntypoSocialYoutube.svg" alt="YouTube"
+                  /></a>
+                  <a class="socials__link" href="#" data-placeholder-link
+                    ><img src="assets/2317-835-imgAkarIconsVkFill.svg" alt="ВКонтакте"
+                  /></a>
+                  <a class="socials__link" href="#" data-placeholder-link
+                    ><img src="assets/2317-835-imgBxlTelegram.svg" alt="Telegram"
+                  /></a>
+                </div>
+                <a class="header-menu__phone" href="tel:+74162222222"
+                  ><img src="assets/2317-806-imgCarbonPhoneFilled.svg" alt="" />8 (4162) 222-222</a
+                >
+                <a class="button header-menu__cta" href="#contacts">Оставить заявку</a>
+              </div>
+            </dialog>
+          </header>
+          <div class="hero__content container">
+            <div class="hero__tags">
+              <span>Площадь: 17 000 м²</span>
+              <span>6 этажей</span>
+              <span>100+ арендаторов</span>
+            </div>
+            <h1>Аренда <br />для бизнеса</h1>
+            <p>Поднимаем бизнес на новый уровень</p>
+            <button type="button" class="button hero__cta" aria-disabled="true">Хочу аренду</button>
+          </div>
+        </section>
+        <section class="tenants" aria-labelledby="tenants-heading" aria-roledescription="карусель">
+          <h2 id="tenants-heading">Наши действующие арендаторы</h2>
+          <div
+            class="tenants__viewport"
+            id="tenant-slider"
+            tabindex="0"
+            aria-label="Арендаторы. Используйте стрелки влево и вправо"
+          >
+            <div class="tenants__track">
+              <div class="tenants__logo">
+                <img src="assets/2317-759-imgRectangle35.png" alt="Арендатор" />
+              </div>
+              <div class="tenants__logo">
+                <img src="assets/2317-759-imgRectangle36.png" alt="Социальная аптека" />
+              </div>
+              <div class="tenants__logo">
+                <img src="assets/2317-759-imgRectangle37.png" alt="Samsung" />
+              </div>
+              <div class="tenants__logo">
+                <img src="assets/2317-759-imgRectangle38.png" alt="Л’Окситан" />
+              </div>
+              <div class="tenants__logo">
+                <img src="assets/2317-759-imgRectangle39.png" alt="МТС" />
+              </div>
+              <div class="tenants__logo tenants__logo--contain">
+                <img src="assets/2317-759-imgRectangle40.png" alt="Rostic’s" />
+              </div>
+              <div class="tenants__logo">
+                <img src="assets/2317-759-imgRectangle41.png" alt="Fresh Market" />
+              </div>
+              <div class="tenants__logo">
+                <img src="assets/2317-759-imgRectangle42.png" alt="ЛЭТУАЛЬ" />
+              </div>
+            </div>
+          </div>
+          <div class="tenants__controls">
+            <button
+              type="button"
+              class="tenants__arrow"
+              data-direction="-1"
+              aria-label="Предыдущий арендатор"
+              aria-controls="tenant-slider"
+            >
+              <img src="assets/2317-759-imgGroup37.svg" alt="" />
+            </button>
+            <button
+              type="button"
+              class="tenants__arrow"
+              data-direction="1"
+              aria-label="Следующий арендатор"
+              aria-controls="tenant-slider"
+            >
+              <img
+                class="tenants__arrow-icon tenants__arrow-icon--rotated"
+                src="assets/2317-759-imgGroup38.svg"
+                alt=""
+              />
+            </button>
+          </div>
+        </section>
+        <section class="catalog container" id="catalog">
+          <h2 class="display-title">Каталог свободных помещений</h2>
+
+          <div class="catalog__controls">
+            <div class="catalog__mobile-toolbar">
+              <button class="catalog__mobile-sort" type="button" aria-disabled="true">
+                <span class="sort-icon" aria-hidden="true">↓↑</span>По умолчанию<span
+                  class="select-chevron"
+                ></span></button
+              ><button type="button" class="catalog__filter-toggle" aria-expanded="true">
+                <span class="catalog__filter-icon" aria-hidden="true"></span>
+                <span class="catalog__filter-toggle-text">Скрыть фильтры</span>
+              </button>
+            </div>
+            <div class="catalog-filter catalog-filter--open" aria-label="Фильтры помещений">
+              <div class="catalog-filter__ranges">
+                <div class="catalog-filter__range">
+                  <span class="catalog-filter__label">Площадь</span>
+                  <div class="range-control__track" aria-hidden="true"><i></i><i></i></div>
+                  <div class="range-control__values"><span>7 м²</span><span>50 м²</span></div>
+                </div>
+                <div class="catalog-filter__range">
+                  <span class="catalog-filter__label">Ставка</span>
+                  <div class="range-control__track" aria-hidden="true"><i></i><i></i></div>
+                  <div class="range-control__values">
+                    <span>10.000 руб / м²</span><span>100.000 руб / м²</span>
+                  </div>
+                </div>
+                <button type="button" class="catalog-filter__apply" aria-disabled="true">
+                  Применить
+                </button>
+              </div>
+              <div class="catalog-filter__options">
+                <div class="catalog-filter__floors">
+                  <span class="catalog-filter__label">Этаж</span>
+                  <div class="catalog-filter__floor-options" aria-label="Выбор этажа">
+                    <button type="button" aria-disabled="true">1</button
+                    ><button type="button" aria-disabled="true">2</button
+                    ><button type="button" aria-disabled="true">3</button
+                    ><button type="button" aria-disabled="true">4</button
+                    ><button type="button" aria-disabled="true">5</button
+                    ><button type="button" aria-disabled="true">6</button>
+                  </div>
+                </div>
+                <div class="catalog-filter__choice">
+                  <span class="catalog-filter__label">Статус</span
+                  ><button class="catalog-filter__select" type="button" aria-disabled="true">
+                    <span class="status-dot"></span>Свободно<span class="select-chevron"></span>
+                  </button>
+                </div>
+                <div class="catalog-filter__choice">
+                  <span class="catalog-filter__label">Категория</span
+                  ><button class="catalog-filter__select" type="button" aria-disabled="true">
+                    Для кафе<span class="select-chevron"></span>
+                  </button>
+                </div>
+                <button
+                  class="catalog-filter__select catalog-filter__sort"
+                  type="button"
+                  aria-disabled="true"
+                >
+                  <span class="sort-icon" aria-hidden="true">↓↑</span>По умолчанию<span
+                    class="select-chevron"
+                  ></span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="catalog__grid">
+            <article class="room-card">
+              <div class="room-card__photo">
+                <img src="assets/2317-27-imgRectangle4.png" alt="Помещение №202" />
+                <span class="room-status"> <i> </i>Свободно</span>
+              </div>
+              <div class="room-card__body">
+                <div class="room-card__tags">
+                  <span>
+                    <img src="assets/2317-27-imgGriddyIconsRoadmapFilled.svg" alt="" />2 этаж</span
+                  >
+                  <span> <img src="assets/2317-27-imgGroup.svg" alt="" />8,73 м²</span>
+                </div>
+                <h3>Помещение №202</h3>
+                <p class="room-card__category">Магазин</p>
+                <div class="room-price">
+                  <strong>38654,61 <small>₽ / мес</small> </strong>
+                  <span>или</span>
+                  <strong>4427,79 <small>₽ / м²</small> </strong>
+                </div>
+                <div class="room-card__actions">
+                  <button type="button" class="button button--dark" aria-disabled="true">
+                    Подробнее
+                  </button>
+                  <button type="button" class="button" aria-disabled="true">Оставить заявку</button>
+                </div>
+              </div>
+            </article>
+            <article class="room-card">
+              <div class="room-card__photo room-card__photo--pending">
+                <span class="room-status"> <i> </i>Свободно</span>
+              </div>
+              <div class="room-card__body">
+                <div class="room-card__tags">
+                  <span>
+                    <img src="assets/2317-27-imgGriddyIconsRoadmapFilled.svg" alt="" />2 этаж</span
+                  >
+                  <span> <img src="assets/2317-27-imgGroup.svg" alt="" />140 м²</span>
+                </div>
+                <h3>Помещение №204</h3>
+                <p class="room-card__category">Магазин, бутик</p>
+                <div class="room-price">
+                  <strong>293626,67 <small>₽ / мес</small> </strong>
+                  <span>или</span>
+                  <strong>2097,33 <small>₽ / м²</small> </strong>
+                </div>
+                <div class="room-card__actions">
+                  <button type="button" class="button button--dark" aria-disabled="true">
+                    Подробнее
+                  </button>
+                  <button type="button" class="button" aria-disabled="true">Оставить заявку</button>
+                </div>
+              </div>
+            </article>
+            <article class="room-card">
+              <div class="room-card__photo room-card__photo--pending">
+                <span class="room-status"> <i> </i>Свободно</span>
+              </div>
+              <div class="room-card__body">
+                <div class="room-card__tags">
+                  <span>
+                    <img src="assets/2317-27-imgGriddyIconsRoadmapFilled.svg" alt="" />2 этаж</span
+                  >
+                  <span> <img src="assets/2317-27-imgGroup.svg" alt="" />35,9 м²</span>
+                </div>
+                <h3>Помещение №216</h3>
+                <p class="room-card__category">Магазин, офис</p>
+                <div class="room-price">
+                  <strong>75390 <small>₽ / мес</small> </strong>
+                  <span>или</span>
+                  <strong>2100 <small>₽ / м²</small> </strong>
+                </div>
+                <div class="room-card__actions">
+                  <button type="button" class="button button--dark" aria-disabled="true">
+                    Подробнее
+                  </button>
+                  <button type="button" class="button" aria-disabled="true">Оставить заявку</button>
+                </div>
+              </div>
+            </article>
+            <article class="room-card">
+              <div class="room-card__photo room-card__photo--pending">
+                <span class="room-status"> <i> </i>Свободно</span>
+              </div>
+              <div class="room-card__body">
+                <div class="room-card__tags">
+                  <span>
+                    <img src="assets/2317-27-imgGriddyIconsRoadmapFilled.svg" alt="" />2 этаж</span
+                  >
+                  <span> <img src="assets/2317-27-imgGroup.svg" alt="" />368,8 м²</span>
+                </div>
+                <h3>Помещение №218</h3>
+                <p class="room-card__category">Магазин</p>
+                <div class="room-price">
+                  <strong>586130,15 <small>₽ / мес</small> </strong>
+                  <span>или</span>
+                  <strong>1589,29 <small>₽ / м²</small> </strong>
+                </div>
+                <div class="room-card__actions">
+                  <button type="button" class="button button--dark" aria-disabled="true">
+                    Подробнее
+                  </button>
+                  <button type="button" class="button" aria-disabled="true">Оставить заявку</button>
+                </div>
+              </div>
+            </article>
+            <article class="room-card">
+              <div class="room-card__photo room-card__photo--pending">
+                <span class="room-status"> <i> </i>Свободно</span>
+              </div>
+              <div class="room-card__body">
+                <div class="room-card__tags">
+                  <span>
+                    <img src="assets/2317-27-imgGriddyIconsRoadmapFilled.svg" alt="" />2 этаж</span
+                  >
+                  <span> <img src="assets/2317-27-imgGroup.svg" alt="" />20,6 м²</span>
+                </div>
+                <h3>Помещение №302</h3>
+                <p class="room-card__category">Магазин / офис</p>
+                <div class="room-price">
+                  <strong>68795,76 <small>₽ / мес</small> </strong>
+                  <span>или</span>
+                  <strong>3339,60 <small>₽ / м²</small> </strong>
+                </div>
+                <div class="room-card__actions">
+                  <button type="button" class="button button--dark" aria-disabled="true">
+                    Подробнее
+                  </button>
+                  <button type="button" class="button" aria-disabled="true">Оставить заявку</button>
+                </div>
+              </div>
+            </article>
+            <article class="room-card">
+              <div class="room-card__photo room-card__photo--pending">
+                <span class="room-status"> <i> </i>Свободно</span>
+              </div>
+              <div class="room-card__body">
+                <div class="room-card__tags">
+                  <span>
+                    <img src="assets/2317-27-imgGriddyIconsRoadmapFilled.svg" alt="" />3 этаж</span
+                  >
+                  <span> <img src="assets/2317-27-imgGroup.svg" alt="" />37,6 м²</span>
+                </div>
+                <h3>Помещение №341</h3>
+                <p class="room-card__category">Магазин / офис / кабинет для бьюти-процедур</p>
+                <div class="room-price">
+                  <strong>60160 <small>₽ / мес</small> </strong>
+                  <span>или</span>
+                  <strong>1600 <small>₽ / м²</small> </strong>
+                </div>
+                <div class="room-card__actions">
+                  <button type="button" class="button button--dark" aria-disabled="true">
+                    Подробнее
+                  </button>
+                  <button type="button" class="button" aria-disabled="true">Оставить заявку</button>
+                </div>
+              </div>
+            </article>
+            <article class="room-card">
+              <div class="room-card__photo room-card__photo--pending">
+                <span class="room-status"> <i> </i>Свободно</span>
+              </div>
+              <div class="room-card__body">
+                <div class="room-card__tags">
+                  <span>
+                    <img src="assets/2317-27-imgGriddyIconsRoadmapFilled.svg" alt="" />4 этаж</span
+                  >
+                  <span> <img src="assets/2317-27-imgGroup.svg" alt="" />56,12 м²</span>
+                </div>
+                <h3>Помещение №432</h3>
+                <p class="room-card__category">Магазин / офис / кабинет для бьюти-процедур</p>
+                <div class="room-price">
+                  <strong>60160 <small>₽ / мес</small> </strong>
+                  <span>или</span>
+                  <strong>1600 <small>₽ / м²</small> </strong>
+                </div>
+                <div class="room-card__actions">
+                  <button type="button" class="button button--dark" aria-disabled="true">
+                    Подробнее
+                  </button>
+                  <button type="button" class="button" aria-disabled="true">Оставить заявку</button>
+                </div>
+              </div>
+            </article>
+            <article class="room-card">
+              <div class="room-card__photo room-card__photo--pending">
+                <span class="room-status"> <i> </i>Свободно</span>
+              </div>
+              <div class="room-card__body">
+                <div class="room-card__tags">
+                  <span>
+                    <img src="assets/2317-27-imgGriddyIconsRoadmapFilled.svg" alt="" />5 этаж</span
+                  >
+                  <span> <img src="assets/2317-27-imgGroup.svg" alt="" />335 м²</span>
+                </div>
+                <h3>Помещение №503</h3>
+                <p class="room-card__category">Для зоны развлечений</p>
+                <div class="room-price">
+                  <strong>303108 <small>₽ / мес</small> </strong>
+                  <span>или</span>
+                  <strong>904,8 <small>₽ / м²</small> </strong>
+                </div>
+                <div class="room-card__actions">
+                  <button type="button" class="button button--dark" aria-disabled="true">
+                    Подробнее
+                  </button>
+                  <button type="button" class="button" aria-disabled="true">Оставить заявку</button>
+                </div>
+              </div>
+            </article>
+            <article class="room-card">
+              <div class="room-card__photo">
+                <span class="room-status"> <i> </i>Свободно</span>
+              </div>
+              <div class="room-card__body">
+                <div class="room-card__tags">
+                  <span>
+                    <img src="assets/2317-27-imgGriddyIconsRoadmapFilled.svg" alt="" />2 этаж</span
+                  >
+                  <span> <img src="assets/2317-27-imgGroup.svg" alt="" />368,8 м²</span>
+                </div>
+                <h3>Помещение №210</h3>
+                <p class="room-card__category">Магазин</p>
+                <div class="room-price">
+                  <strong>586130,15 <small>₽ / мес</small> </strong>
+                  <span>или</span>
+                  <strong>1589,29 <small>₽ / м²</small> </strong>
+                </div>
+                <div class="room-card__actions">
+                  <button type="button" class="button button--dark" aria-disabled="true">
+                    Подробнее
+                  </button>
+                  <button type="button" class="button" aria-disabled="true">Оставить заявку</button>
+                </div>
+              </div>
+            </article>
+            <article class="room-card">
+              <div class="room-card__photo">
+                <span class="room-status"> <i> </i>Свободно</span>
+              </div>
+              <div class="room-card__body">
+                <div class="room-card__tags">
+                  <span>
+                    <img src="assets/2317-27-imgGriddyIconsRoadmapFilled.svg" alt="" />2 этаж</span
+                  >
+                  <span> <img src="assets/2317-27-imgGroup.svg" alt="" />20,6 м²</span>
+                </div>
+                <h3>Помещение №212</h3>
+                <p class="room-card__category">Магазин / офис</p>
+                <div class="room-price">
+                  <strong>68795,76 <small>₽ / мес</small> </strong>
+                  <span>или</span>
+                  <strong>3339,60 <small>₽ / м²</small> </strong>
+                </div>
+                <div class="room-card__actions">
+                  <button type="button" class="button button--dark" aria-disabled="true">
+                    Подробнее
+                  </button>
+                  <button type="button" class="button" aria-disabled="true">Оставить заявку</button>
+                </div>
+              </div>
+            </article>
+            <article class="room-card">
+              <div class="room-card__photo">
+                <span class="room-status room-status--occupied"> <i> </i>Занято</span>
+              </div>
+              <div class="room-card__body">
+                <div class="room-card__tags">
+                  <span>
+                    <img src="assets/2317-27-imgGriddyIconsRoadmapFilled.svg" alt="" />2 этаж</span
+                  >
+                  <span> <img src="assets/2317-27-imgGroup.svg" alt="" />30,9 м²</span>
+                </div>
+                <h3>Помещение №213</h3>
+                <p class="room-card__category">Категория</p>
+                <div class="room-price">
+                  <strong>60160 <small>₽ / мес</small> </strong>
+                  <span>или</span>
+                  <strong>1600 <small>₽ / м²</small> </strong>
+                </div>
+                <div class="room-card__actions">
+                  <button type="button" class="button button--dark" aria-disabled="true">
+                    Подробнее
+                  </button>
+                  <button type="button" class="button" aria-disabled="true">Оставить заявку</button>
+                </div>
+              </div>
+            </article>
+            <article class="room-card">
+              <div class="room-card__photo">
+                <span class="room-status room-status--occupied"> <i> </i>Занято</span>
+              </div>
+              <div class="room-card__body">
+                <div class="room-card__tags">
+                  <span>
+                    <img src="assets/2317-27-imgGriddyIconsRoadmapFilled.svg" alt="" />2 этаж</span
+                  >
+                  <span> <img src="assets/2317-27-imgGroup.svg" alt="" />30,9 м²</span>
+                </div>
+                <h3>Помещение №212</h3>
+                <p class="room-card__category">Категория</p>
+                <div class="room-price">
+                  <strong>60160 <small>₽ / мес</small> </strong>
+                  <span>или</span>
+                  <strong>1600 <small>₽ / м²</small> </strong>
+                </div>
+                <div class="room-card__actions">
+                  <button type="button" class="button button--dark" aria-disabled="true">
+                    Подробнее
+                  </button>
+                  <button type="button" class="button" aria-disabled="true">Оставить заявку</button>
+                </div>
+              </div>
+            </article>
+            <article class="room-card">
+              <div class="room-card__photo">
+                <span class="room-status room-status--soon"> <i> </i>Скоро освободится</span>
+              </div>
+              <div class="room-card__body">
+                <div class="room-card__tags">
+                  <span>
+                    <img src="assets/2317-27-imgGriddyIconsRoadmapFilled.svg" alt="" />2 этаж</span
+                  >
+                  <span> <img src="assets/2317-27-imgGroup.svg" alt="" />30,9 м²</span>
+                </div>
+                <h3>Помещение №211</h3>
+                <p class="room-card__category">Категория</p>
+                <div class="room-price">
+                  <strong>60160 <small>₽ / мес</small> </strong>
+                  <span>или</span>
+                  <strong>1600 <small>₽ / м²</small> </strong>
+                </div>
+                <div class="room-card__actions">
+                  <button type="button" class="button button--dark" aria-disabled="true">
+                    Подробнее
+                  </button>
+                  <button type="button" class="button" aria-disabled="true">Оставить заявку</button>
+                </div>
+              </div>
+            </article>
+            <article class="room-card">
+              <div class="room-card__photo">
+                <span class="room-status room-status--soon"> <i> </i>Скоро освободится</span>
+              </div>
+              <div class="room-card__body">
+                <div class="room-card__tags">
+                  <span>
+                    <img src="assets/2317-27-imgGriddyIconsRoadmapFilled.svg" alt="" />2 этаж</span
+                  >
+                  <span> <img src="assets/2317-27-imgGroup.svg" alt="" />30,9 м²</span>
+                </div>
+                <h3>Помещение №210</h3>
+                <p class="room-card__category">Категория</p>
+                <div class="room-price">
+                  <strong>60160 <small>₽ / мес</small> </strong>
+                  <span>или</span>
+                  <strong>1600 <small>₽ / м²</small> </strong>
+                </div>
+                <div class="room-card__actions">
+                  <button type="button" class="button button--dark" aria-disabled="true">
+                    Подробнее
+                  </button>
+                  <button type="button" class="button" aria-disabled="true">Оставить заявку</button>
+                </div>
+              </div>
+            </article>
+            <article class="room-card">
+              <div class="room-card__photo">
+                <span class="room-status room-status--occupied"> <i> </i>Занято</span>
+              </div>
+              <div class="room-card__body">
+                <div class="room-card__tags">
+                  <span>
+                    <img src="assets/2317-27-imgGriddyIconsRoadmapFilled.svg" alt="" />2 этаж</span
+                  >
+                  <span> <img src="assets/2317-27-imgGroup.svg" alt="" />30,9 м²</span>
+                </div>
+                <h3>Помещение №212</h3>
+                <p class="room-card__category">Категория</p>
+                <div class="room-price">
+                  <strong>60160 <small>₽ / мес</small> </strong>
+                  <span>или</span>
+                  <strong>1600 <small>₽ / м²</small> </strong>
+                </div>
+                <div class="room-card__actions">
+                  <button type="button" class="button button--dark" aria-disabled="true">
+                    Подробнее
+                  </button>
+                  <button type="button" class="button" aria-disabled="true">Оставить заявку</button>
+                </div>
+              </div>
+            </article>
+            <article class="room-card">
+              <div class="room-card__photo">
+                <span class="room-status room-status--occupied"> <i> </i>Занято</span>
+              </div>
+              <div class="room-card__body">
+                <div class="room-card__tags">
+                  <span>
+                    <img src="assets/2317-27-imgGriddyIconsRoadmapFilled.svg" alt="" />2 этаж</span
+                  >
+                  <span> <img src="assets/2317-27-imgGroup.svg" alt="" />30,9 м²</span>
+                </div>
+                <h3>Помещение №213</h3>
+                <p class="room-card__category">Категория</p>
+                <div class="room-price">
+                  <strong>60160 <small>₽ / мес</small> </strong>
+                  <span>или</span>
+                  <strong>1600 <small>₽ / м²</small> </strong>
+                </div>
+                <div class="room-card__actions">
+                  <button type="button" class="button button--dark" aria-disabled="true">
+                    Подробнее
+                  </button>
+                  <button type="button" class="button" aria-disabled="true">Оставить заявку</button>
+                </div>
+              </div>
+            </article>
+            <article class="room-card">
+              <div class="room-card__photo">
+                <span class="room-status room-status--occupied"> <i> </i>Занято</span>
+              </div>
+              <div class="room-card__body">
+                <div class="room-card__tags">
+                  <span>
+                    <img src="assets/2317-27-imgGriddyIconsRoadmapFilled.svg" alt="" />2 этаж</span
+                  >
+                  <span> <img src="assets/2317-27-imgGroup.svg" alt="" />30,9 м²</span>
+                </div>
+                <h3>Помещение №212</h3>
+                <p class="room-card__category">Категория</p>
+                <div class="room-price">
+                  <strong>60160 <small>₽ / мес</small> </strong>
+                  <span>или</span>
+                  <strong>1600 <small>₽ / м²</small> </strong>
+                </div>
+                <div class="room-card__actions">
+                  <button type="button" class="button button--dark" aria-disabled="true">
+                    Подробнее
+                  </button>
+                  <button type="button" class="button" aria-disabled="true">Оставить заявку</button>
+                </div>
+              </div>
+            </article>
+            <article class="room-card">
+              <div class="room-card__photo">
+                <span class="room-status room-status--soon"> <i> </i>Скоро освободится</span>
+              </div>
+              <div class="room-card__body">
+                <div class="room-card__tags">
+                  <span>
+                    <img src="assets/2317-27-imgGriddyIconsRoadmapFilled.svg" alt="" />2 этаж</span
+                  >
+                  <span> <img src="assets/2317-27-imgGroup.svg" alt="" />30,9 м²</span>
+                </div>
+                <h3>Помещение №211</h3>
+                <p class="room-card__category">Категория</p>
+                <div class="room-price">
+                  <strong>60160 <small>₽ / мес</small> </strong>
+                  <span>или</span>
+                  <strong>1600 <small>₽ / м²</small> </strong>
+                </div>
+                <div class="room-card__actions">
+                  <button type="button" class="button button--dark" aria-disabled="true">
+                    Подробнее
+                  </button>
+                  <button type="button" class="button" aria-disabled="true">Оставить заявку</button>
+                </div>
+              </div>
+            </article>
+            <article class="room-card">
+              <div class="room-card__photo">
+                <span class="room-status room-status--soon"> <i> </i>Скоро освободится</span>
+              </div>
+              <div class="room-card__body">
+                <div class="room-card__tags">
+                  <span>
+                    <img src="assets/2317-27-imgGriddyIconsRoadmapFilled.svg" alt="" />2 этаж</span
+                  >
+                  <span> <img src="assets/2317-27-imgGroup.svg" alt="" />30,9 м²</span>
+                </div>
+                <h3>Помещение №210</h3>
+                <p class="room-card__category">Категория</p>
+                <div class="room-price">
+                  <strong>60160 <small>₽ / мес</small> </strong>
+                  <span>или</span>
+                  <strong>1600 <small>₽ / м²</small> </strong>
+                </div>
+                <div class="room-card__actions">
+                  <button type="button" class="button button--dark" aria-disabled="true">
+                    Подробнее
+                  </button>
+                  <button type="button" class="button" aria-disabled="true">Оставить заявку</button>
+                </div>
+              </div>
+            </article>
+            <article class="room-card">
+              <div class="room-card__photo">
+                <span class="room-status room-status--occupied"> <i> </i>Занято</span>
+              </div>
+              <div class="room-card__body">
+                <div class="room-card__tags">
+                  <span>
+                    <img src="assets/2317-27-imgGriddyIconsRoadmapFilled.svg" alt="" />2 этаж</span
+                  >
+                  <span> <img src="assets/2317-27-imgGroup.svg" alt="" />30,9 м²</span>
+                </div>
+                <h3>Помещение №212</h3>
+                <p class="room-card__category">Категория</p>
+                <div class="room-price">
+                  <strong>60160 <small>₽ / мес</small> </strong>
+                  <span>или</span>
+                  <strong>1600 <small>₽ / м²</small> </strong>
+                </div>
+                <div class="room-card__actions">
+                  <button type="button" class="button button--dark" aria-disabled="true">
+                    Подробнее
+                  </button>
+                  <button type="button" class="button" aria-disabled="true">Оставить заявку</button>
+                </div>
+              </div>
+            </article>
+          </div>
+          <nav class="pagination" aria-label="Страницы каталога">
+            <button
+              type="button"
+              class="arrow pagination__arrow arrow--previous"
+              aria-label="Предыдущая страница"
+              aria-disabled="true"
+            >
+              <span></span>
+            </button>
+            <div class="pagination__numbers">
+              <button
+                type="button"
+                class="pagination__button pagination__button--current"
+                aria-current="page"
+                aria-disabled="true"
+              >
+                1</button
+              ><button type="button" class="pagination__button" aria-disabled="true">2</button
+              ><button type="button" class="pagination__button" aria-disabled="true">3</button
+              ><button
+                type="button"
+                class="pagination__button pagination__button--all"
+                aria-disabled="true"
+              >
+                Все
+              </button>
+            </div>
+            <button
+              type="button"
+              class="arrow pagination__arrow arrow--next"
+              aria-label="Следующая страница"
+              aria-disabled="true"
+            >
+              <span></span>
+            </button>
+          </nav>
+        </section>
+        <section class="mall-map container" id="mall-map" aria-labelledby="map-heading">
+          <h2 class="display-title" id="map-heading">Схема ТЦ</h2>
+          <div class="mall-map__legend" role="group" aria-label="Подсветка по статусу помещения">
+            <button type="button" data-map-status="all" aria-pressed="true">Все</button
+            ><button type="button" data-map-status="available" aria-pressed="false">
+              <i class="mall-map__status-dot mall-map__status-dot--available" aria-hidden="true"></i
+              >Свободно</button
+            ><button type="button" data-map-status="soon" aria-pressed="false">
+              <i class="mall-map__status-dot mall-map__status-dot--soon" aria-hidden="true"></i
+              >Скоро освободится</button
+            ><button type="button" data-map-status="occupied" aria-pressed="false">
+              <i class="mall-map__status-dot mall-map__status-dot--occupied" aria-hidden="true"></i
+              >Занято
+            </button>
+          </div>
+          <div class="mall-map__shell">
+            <div class="mall-map__floors" role="group" aria-label="Выбор этажа">
+              <span>Этаж</span>
+              <button type="button" data-floor="6" aria-pressed="false">6</button
+              ><button type="button" data-floor="5" aria-pressed="false">5</button
+              ><button type="button" data-floor="4" aria-pressed="false">4</button
+              ><button type="button" data-floor="3" aria-pressed="false">3</button
+              ><button type="button" data-floor="2" aria-pressed="true">2</button
+              ><button type="button" data-floor="1" aria-pressed="false">1</button
+              ><button type="button" data-floor="0" aria-pressed="false">0</button>
+            </div>
+            <div class="mall-map__workspace">
+              <div
+                class="mall-map__canvas"
+                tabindex="0"
+                role="region"
+                aria-label="Схема 2 этажа. Область прокрутки"
+              >
+                <div class="mall-map__size">
+                  <div class="mall-map__layer">
+                    <img
+                      class="mall-map__plan"
+                      src="assets/mall-plan-original.svg"
+                      alt="Оригинальная схема второго этажа ТЦ МЕГА"
+                      width="1270"
+                      height="742"
+                    /><svg
+                      class="mall-map__regions"
+                      viewBox="0 0 1270 742"
+                      aria-label="Помещения второго этажа"
+                    ></svg>
+                  </div>
+                </div>
+              </div>
+              <p class="mall-map__empty" hidden></p>
+              <aside
+                id="map-room-card"
+                class="mall-map__tooltip"
+                aria-labelledby="map-room-title"
+                hidden
+              >
+                <div class="mall-map__room-photo"></div>
+                <div class="mall-map__room-content">
+                  <button
+                    class="mall-map__card-close"
+                    type="button"
+                    aria-label="Закрыть карточку помещения"
+                  >
+                    ×</button
+                  ><span class="mall-map__tooltip-status"></span>
+                  <p class="mall-map__room-meta"></p>
+                  <h3 id="map-room-title"></h3>
+                  <p class="mall-map__room-category"></p>
+                  <p class="mall-map__room-note"></p>
+                  <div class="mall-map__room-actions">
+                    <button type="button" class="button button--dark" data-map-action="details">
+                      Подробнее</button
+                    ><button type="button" class="button" data-map-action="apply">
+                      Оставить заявку
+                    </button>
+                  </div>
+                </div>
+              </aside>
+            </div>
+            <div class="mall-map__zoom" role="group" aria-label="Масштаб схемы">
+              <button type="button" data-zoom="in" aria-label="Увеличить схему">+</button
+              ><output aria-label="Текущий масштаб">100%</output
+              ><button type="button" data-zoom="out" aria-label="Уменьшить схему">−</button>
+            </div>
+          </div>
+          <p class="mall-map__announcement" role="status" aria-live="polite"></p>
+        </section>
+        <section class="information container">
+          <div class="information__image">
+            <img src="assets/2317-752-imgRectangle12.png" alt="Галерея торгового центра" />
+          </div>
+          <div class="information__content">
+            <h2>Полезная информация для арендаторов</h2>
+            <p>Скачайте PDF-презентацию с техническими требованиями для арендаторов.</p>
+            <a class="button information__download" href="#" data-placeholder-link>Скачать файл</a>
+          </div>
+        </section>
+        <section class="contact" id="contacts">
+          <div class="contact__photo">
+            <img src="assets/2317-696-imgRectangle2.png" alt="У входа в МЕГУ" />
+          </div>
+          <div class="contact__layout container">
+            <div class="contact__copy">
+              <h2 class="display-title">Свяжитесь с нами<br />по вопросам аренды</h2>
+              <p class="contact__intro">
+                Мы любим получать письма от наших гостей, будь то пожелание, похвала или жалоба. Всё
+                имеет ценность, всё обрабатывается, а к лучшему мы прислушиваемся.
+              </p>
+              <div class="contact__details">
+                <div class="contact__manager">
+                  <small>Менеджер</small>
+                  <p>Мария Михайловна Иванова</p>
+                </div>
+                <div>
+                  <small>Телефон</small>
+                  <p><a class="contact__link" href="tel:+79145803030">8 (914) 580-30-30</a></p>
+                </div>
+                <div>
+                  <small>Электронная почта</small>
+                  <p>
+                    <a class="contact__link" href="mailto:client@megatrc.ru">client@megatrc.ru</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <form class="rental-form__panel rental-form" aria-label="Заявка на аренду">
+              <label class="form-field">
+                <span>ФИО <sup>*</sup> </span>
+                <input
+                  name="name"
+                  autocomplete="name"
+                  required
+                  maxlength="150"
+                  placeholder="Иванов Иван Иванович"
+                  aria-label="ФИО"
+                />
+              </label>
+              <label class="form-field">
+                <span>Номер телефона <sup>*</sup> </span>
+                <input
+                  name="phone"
+                  type="tel"
+                  inputmode="tel"
+                  autocomplete="tel"
+                  required
+                  maxlength="24"
+                  placeholder="+7 (999) 999-99-99"
+                  aria-label="Номер телефона"
+                />
+              </label>
+              <label class="form-field">
+                <span>Электронная почта <sup>*</sup> </span>
+                <input
+                  name="email"
+                  type="email"
+                  inputmode="email"
+                  autocapitalize="none"
+                  spellcheck="false"
+                  autocomplete="email"
+                  required
+                  maxlength="254"
+                  placeholder="example@example.ru"
+                  aria-label="Электронная почта"
+                />
+              </label>
+              <div class="form-field">
+                <span>Тип бизнеса</span>
+                <select name="business" aria-label="Тип бизнеса">
+                  <option value="">Выберите..</option>
+                  <option>Магазин</option>
+                  <option>Офис</option>
+                  <option>Услуги</option>
+                  <option>Общественное питание</option>
+                  <option>Развлечения</option>
+                  <option>Другое</option>
+                </select>
+              </div>
+              <label class="form-field form-field--comment">
+                <span>Комментарий</span>
+                <textarea name="comment" maxlength="3000" aria-label="Комментарий"></textarea>
+              </label>
+              <label class="rental-form__consent">
+                <input
+                  class="rental-form__checkbox"
+                  type="checkbox"
+                  name="consent"
+                  required
+                  aria-label="Согласие на обработку персональных данных"
+                />
+                <p>
+                  Соглашаюсь с Политикой обработки персональных данных и даю согласие на получение
+                  информационных и рекламных писем
+                </p></label
+              ><input type="hidden" name="room" />
+              <p class="rental-form__status" role="status" aria-live="polite"></p>
+              <button type="submit" class="button">Отправить заявку</button>
+            </form>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div class="container site-footer__inner">
+          <p>2026 © Mega</p>
+          <div class="socials">
+            <a class="socials__link" href="#" data-placeholder-link
+              ><img src="assets/2317-835-imgEntypoSocialYoutube.svg" alt="YouTube"
+            /></a>
+            <a class="socials__link" href="#" data-placeholder-link
+              ><img src="assets/2317-835-imgAkarIconsVkFill.svg" alt="ВКонтакте"
+            /></a>
+            <a class="socials__link" href="#" data-placeholder-link
+              ><img src="assets/2317-835-imgBxlTelegram.svg" alt="Telegram"
+            /></a>
+          </div>
+          <p>
+            <a class="site-footer__link" href="#" data-placeholder-link
+              >Пользовательское соглашение</a
+            >
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

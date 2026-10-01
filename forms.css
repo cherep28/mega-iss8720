@@ -1,0 +1,710 @@
+#mega-page .rental-form .form-field select {
+  display: block;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid var(--ink);
+  border-radius: 0;
+  background: white;
+  padding: 20px 0 30px;
+  font: inherit;
+  font-size: 30px;
+  letter-spacing: -0.05em;
+  color: var(--ink);
+}
+#mega-page .rental-form .form-field input:focus-visible,
+#mega-page .rental-form .form-field textarea:focus-visible,
+#mega-page .rental-form .form-field select:focus-visible {
+  outline: none;
+  box-shadow: 0 1px 0 currentColor;
+}
+#mega-page .rental-form .rental-form__checkbox {
+  appearance: auto;
+  accent-color: var(--red);
+  padding: 0;
+  margin: 2px 0 0;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+#mega-page .rental-form .rental-form__consent {
+  cursor: pointer;
+}
+#mega-page .rental-form button[type="submit"],
+#mega-page .hero__cta,
+#mega-page .room-card__actions .button:last-child {
+  cursor: pointer;
+}
+#mega-page .rental-form__status:empty {
+  display: none;
+}
+#mega-page .rental-form__status {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-top: 20px;
+  color: #a01c20;
+}
+html.page--rental-open {
+  overflow: hidden;
+}
+html.page--details-open {
+  overflow: hidden;
+}
+#mega-page .room-card__actions .button:first-child {
+  cursor: pointer;
+}
+#mega-page .room-details {
+  padding: 0;
+  border: 0;
+  border-radius: 30px;
+  width: 1000px;
+  max-width: calc(100% - 40px);
+  max-height: calc(100dvh - 40px);
+  color: var(--ink);
+  overscroll-behavior: contain;
+}
+#mega-page .room-details[open] {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+#mega-page .room-details::backdrop {
+  background: #0009;
+}
+#mega-page .room-details .modal-close {
+  z-index: 1;
+  background: var(--surface);
+}
+#mega-page .room-details__photo {
+  position: relative;
+  min-height: 440px;
+  background: var(--surface);
+  display: grid;
+  place-items: center;
+  color: #666;
+}
+#mega-page .room-details__photo > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  inset: 0;
+}
+#mega-page .room-details__photo > p {
+  padding: 30px;
+  text-align: center;
+  font-size: 16px;
+}
+#mega-page .room-details__content {
+  padding: 65px 40px 40px;
+  min-width: 0;
+}
+#mega-page .room-details__content h2 {
+  font-size: 32px;
+  letter-spacing: -0.05em;
+  line-height: 1.15;
+}
+#mega-page .room-details__category {
+  font-size: 16px;
+  line-height: 1.4;
+  margin-top: 10px;
+}
+#mega-page .room-details__facts {
+  display: flex;
+  gap: 40px;
+  margin: 35px 0;
+}
+#mega-page .room-details__facts dt {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+#mega-page .room-details__facts dd {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+}
+#mega-page .room-details__price .room-price {
+  margin: 0;
+  flex-wrap: wrap;
+  white-space: normal;
+  font-size: 22px;
+  gap: 8px;
+}
+#mega-page .room-details__price .room-price small {
+  font-size: 14px;
+}
+#mega-page .room-details__apply {
+  margin-top: 35px;
+  font-size: 18px;
+  width: 100%;
+  padding: 16px 20px;
+  cursor: pointer;
+}
+@media (max-width: 700px) {
+  #mega-page .room-details[open] {
+    display: block;
+  }
+  #mega-page .room-details__photo {
+    min-height: 220px;
+  }
+  #mega-page .room-details__content {
+    padding: 30px 20px;
+  }
+  #mega-page .room-details__content h2 {
+    font-size: 26px;
+  }
+  #mega-page .room-details__facts {
+    margin: 25px 0;
+    gap: 30px;
+  }
+  #mega-page .room-details__price .room-price {
+    font-size: 18px;
+  }
+  #mega-page .room-details__apply {
+    font-size: 16px;
+  }
+  #mega-page .room-details {
+    border-radius: 20px;
+  }
+}
+#mega-page .rental-modal {
+  padding: 0;
+  border: 0;
+  border-radius: 30px;
+  width: 600px;
+  max-width: calc(100% - 40px);
+  max-height: calc(100dvh - 40px);
+  color: var(--ink);
+  overscroll-behavior: contain;
+}
+#mega-page .rental-modal::backdrop {
+  background: #0009;
+}
+#mega-page .rental-modal__cover {
+  display: block;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+#mega-page .modal-close {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: white;
+  font-size: 30px;
+  line-height: 1;
+  cursor: pointer;
+}
+#mega-page .rental-modal__heading {
+  padding: 30px 40px 0;
+}
+#mega-page .rental-modal__heading h2 {
+  font-size: 32px;
+  letter-spacing: -0.05em;
+}
+#mega-page .rental-modal__heading p {
+  font-size: 16px;
+  line-height: 1.4;
+  margin-top: 10px;
+}
+#mega-page .rental-modal__room {
+  font-weight: 700;
+}
+#mega-page .rental-modal .rental-form__panel {
+  padding: 30px 40px;
+  border-radius: 0;
+}
+#mega-page .rental-modal .form-field {
+  margin-bottom: 25px;
+}
+#mega-page .rental-modal .form-field > span {
+  font-size: 14px;
+}
+#mega-page .rental-modal .form-field input,
+#mega-page .rental-modal .form-field select {
+  font-size: 20px;
+  padding: 10px 0 7px;
+  height: 42px;
+}
+#mega-page .rental-modal .form-field textarea {
+  height: 75px;
+  font-size: 20px;
+}
+#mega-page .rental-modal .rental-form__consent p {
+  font-size: 11px;
+  text-transform: none;
+}
+#mega-page .rental-modal .button {
+  font-size: 16px;
+  margin-top: 25px;
+  padding: 14px 25px;
+}
+@media (max-width: 600px) {
+  #mega-page .rental-form .form-field select {
+    font-size: 20px;
+    padding: 10px 0 7px;
+    height: 37px;
+  }
+  #mega-page .rental-modal__heading {
+    padding: 20px 20px 0;
+  }
+  #mega-page .rental-modal__heading h2 {
+    font-size: 26px;
+  }
+  #mega-page .rental-modal .rental-form__panel {
+    padding: 25px 20px;
+  }
+  #mega-page .rental-modal {
+    border-radius: 20px;
+  }
+  #mega-page .rental-modal .button {
+    width: 100%;
+  }
+}
+
+
+#mega-page .room-details {
+  width: 1120px;
+  border-radius: 30px;
+}
+#mega-page .room-details[open] {
+  grid-template-columns: 1fr 1fr;
+}
+#mega-page .room-details__photo {
+  min-height: 558px;
+  border-radius: 30px;
+  overflow: hidden;
+}
+#mega-page .room-details__content {
+  padding: 36px 56px 36px 46px;
+  display: flex;
+  flex-direction: column;
+}
+#mega-page .room-details__status .room-status {
+  position: static;
+  display: inline-flex;
+  background: var(--surface);
+  color: var(--ink);
+  padding: 4px 10px;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -0.05em;
+}
+#mega-page .room-details__content h2 {
+  font-size: 32px;
+  margin-top: 14px;
+  margin-bottom: 24px;
+  letter-spacing: -0.05em;
+}
+#mega-page .room-details__facts {
+  display: block;
+  margin: 0;
+  border-top: 1px solid #c6cedb;
+}
+#mega-page .room-details__facts > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 5px 0;
+  border-bottom: 1px solid #c6cedb;
+  font-size: 14px;
+  line-height: 1.25;
+}
+#mega-page .room-details__facts dt {
+  margin: 0;
+  font-size: 14px;
+  color: var(--ink);
+  letter-spacing: -0.04em;
+}
+#mega-page .room-details__facts dd {
+  font-size: 14px;
+  font-weight: 500;
+  text-align: right;
+  letter-spacing: -0.04em;
+}
+#mega-page .room-details__neighbors {
+  margin-top: 20px;
+  font-size: 14px;
+}
+#mega-page .room-details__neighbor-logos {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  min-height: 38px;
+  margin-top: 10px;
+}
+#mega-page .room-details__neighbor-logos img {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+#mega-page .room-details__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-top: auto;
+  padding-top: 28px;
+}
+#mega-page .room-details__price .room-price {
+  display: block;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: -0.06em;
+  line-height: 1.2;
+}
+#mega-page .room-details__price .room-price > strong:first-child {
+  display: block;
+  white-space: nowrap;
+}
+#mega-page .room-details__price .room-price > strong:first-child small {
+  font-size: 17px;
+}
+#mega-page .room-details__price .room-price > span,
+#mega-page .room-details__price .room-price > strong:last-child,
+#mega-page .room-details__price .room-price > strong:last-child small {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--ink);
+  letter-spacing: -0.04em;
+}
+#mega-page .room-details__apply {
+  width: auto;
+  flex: none;
+  font-size: 16px;
+  margin: 0;
+  padding: 14px 22px;
+}
+#mega-page .room-details .modal-close {
+  background: transparent;
+  right: 20px;
+  top: 20px;
+  font-size: 34px;
+  font-weight: 400;
+}
+#mega-page .room-details__arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: white;
+  color: var(--ink);
+  font:
+    36px/1 Arial,
+    sans-serif;
+  display: grid;
+  place-items: center;
+  padding: 0;
+}
+#mega-page .room-details__arrow.arrow--previous {
+  left: 28px;
+}
+#mega-page .room-details__arrow.arrow--next {
+  right: 28px;
+}
+#mega-page .room-details__arrow span {
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-top: 2px solid currentColor;
+  border-right: 2px solid currentColor;
+  transform: translateX(-3px) rotate(45deg);
+}
+#mega-page .room-details__arrow.arrow--previous span {
+  transform: translateX(3px) rotate(-135deg);
+}
+@media (min-width: 701px) and (max-width: 1050px) {
+  #mega-page .room-details__content {
+    padding: 45px 24px 28px;
+  }
+  #mega-page .room-details__bottom {
+    flex-wrap: wrap;
+  }
+  #mega-page .room-details__content h2 {
+    font-size: 28px;
+  }
+}
+@media (max-width: 700px) {
+  #mega-page .room-details[open] {
+    display: block;
+  }
+  #mega-page .room-details__photo {
+    min-height: 240px;
+    border-radius: 20px;
+  }
+  #mega-page .room-details__content {
+    padding: 25px 20px;
+  }
+  #mega-page .room-details__content h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+  #mega-page .room-details__bottom {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+  }
+  #mega-page .room-details__apply {
+    width: 100%;
+  }
+  #mega-page .room-details__facts dt,
+  #mega-page .room-details__facts dd {
+    font-size: 13px;
+  }
+  #mega-page .room-details__facts dt {
+    max-width: 65%;
+  }
+  #mega-page .room-details {
+    border-radius: 20px;
+  }
+  #mega-page .room-details__arrow.arrow--previous {
+    left: 16px;
+  }
+  #mega-page .room-details__arrow.arrow--next {
+    right: 16px;
+  }
+}
+
+
+#mega-page .rental-form .form-field input,
+#mega-page .rental-form .form-field select,
+#mega-page .rental-form .form-field textarea {
+  padding: 8px 0 4px;
+  line-height: 1.25;
+  color: var(--ink);
+  border-bottom-color: currentColor;
+}
+
+#mega-page .rental-form .form-field input,
+#mega-page .rental-form .form-field select {
+  height: auto;
+}
+
+#mega-page .rental-form .form-field :is(input, select, textarea):focus {
+  outline: none;
+  box-shadow: 0 1px 0 currentColor;
+}
+
+#mega-page .rental-form .form-field :is(input, select, textarea)[aria-invalid="true"] {
+  color: var(--red);
+  border-bottom-color: var(--red);
+}
+
+#mega-page .rental-form .form-field [aria-invalid="true"]::placeholder {
+  color: var(--red);
+  opacity: 0.65;
+}
+
+
+#mega-page .rental-form__dropdown {
+  width: 100%;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+
+#mega-page .rental-form__dropdown .dropdown__trigger {
+  padding: 8px 30px 4px 0;
+  border-bottom: 2px solid var(--ink);
+  border-radius: 0;
+  font-size: 30px;
+  line-height: 1.25;
+}
+
+#mega-page .rental-form__dropdown .dropdown__trigger:focus-visible {
+  outline: none;
+  box-shadow: 0 1px 0 var(--ink);
+}
+
+#mega-page .rental-form__dropdown .dropdown__list {
+  max-height: 240px;
+}
+
+#mega-page .rental-modal .rental-form__dropdown .dropdown__trigger {
+  font-size: 20px;
+}
+
+@media (max-width: 600px) {
+  #mega-page .rental-form__dropdown .dropdown__trigger {
+    font-size: 20px;
+  }
+}
+
+
+#mega-page .rental-form textarea {
+  scrollbar-width: thin;
+  scrollbar-color: #000 #fff;
+}
+#mega-page .rental-form textarea::-webkit-scrollbar {
+  width: 8px;
+}
+#mega-page .rental-form textarea::-webkit-scrollbar-track {
+  background: #fff;
+  border-radius: 100px;
+  margin-block: 12px;
+}
+#mega-page .rental-form textarea::-webkit-scrollbar-thumb {
+  background: #000;
+  border: 2px solid #fff;
+  border-radius: 100px;
+}
+#mega-page .rental-form textarea::-webkit-scrollbar-thumb:hover {
+  background: #000;
+}
+#mega-page .rental-form textarea::-webkit-scrollbar-button {
+  display: none;
+  width: 0;
+  height: 0;
+}
+#mega-page .rental-form textarea::-webkit-scrollbar {
+  background: #fff;
+}
+#mega-page .rental-form textarea::-webkit-scrollbar-button:single-button {
+  display: none;
+  width: 0;
+  height: 0;
+  background: transparent;
+}
+#mega-page .rental-form textarea::-webkit-scrollbar-corner {
+  background: #fff;
+}
+@supports selector(::-webkit-scrollbar) {
+  #mega-page .rental-form textarea {
+    scrollbar-width: auto;
+    scrollbar-color: auto;
+  }
+}
+
+
+#mega-page .rental-modal {
+  width: 600px;
+  max-width: calc(100vw - 24px);
+  max-height: calc(100dvh - 24px);
+  overflow-x: hidden;
+  overflow-y: auto;
+  scrollbar-width: none;
+  scroll-padding-block: 20px;
+}
+#mega-page .rental-modal::-webkit-scrollbar {
+  display: none;
+}
+#mega-page .rental-modal__cover {
+  height: clamp(80px, 15dvh, 150px);
+}
+#mega-page .rental-modal__heading {
+  padding: 20px 32px 0;
+}
+#mega-page .rental-modal__heading h2 {
+  font-size: clamp(24px, 3vw, 30px);
+  line-height: 1.15;
+  padding-right: 20px;
+}
+#mega-page .rental-modal__heading p {
+  font-size: 14px;
+  margin-top: 8px;
+}
+#mega-page .rental-modal__room:empty {
+  display: none;
+}
+#mega-page .rental-modal .rental-form__panel {
+  padding: 20px 32px 28px;
+}
+#mega-page .rental-modal .form-field {
+  min-width: 0;
+  margin-bottom: 16px;
+}
+#mega-page .rental-modal .form-field input,
+#mega-page .rental-modal .rental-form__dropdown .dropdown__trigger {
+  font-size: 18px;
+  line-height: 1.3;
+  height: 38px;
+  padding-top: 5px;
+  padding-bottom: 4px;
+}
+#mega-page .rental-modal .form-field textarea {
+  height: 60px;
+  font-size: 18px;
+  line-height: 1.3;
+}
+#mega-page .rental-modal .rental-form__consent p {
+  font-size: 11px;
+  line-height: 1.35;
+}
+#mega-page .rental-modal .button {
+  width: 100%;
+  min-height: 44px;
+  margin-top: 18px;
+  white-space: normal;
+}
+#mega-page .rental-modal .modal-close {
+  z-index: 5;
+}
+@media (max-width: 600px) {
+  #mega-page .rental-modal {
+    border-radius: 20px;
+  }
+  #mega-page .rental-modal__heading {
+    padding: 18px 20px 0;
+  }
+  #mega-page .rental-modal .rental-form__panel {
+    padding: 18px 20px 22px;
+  }
+}
+@media (max-height: 800px) {
+  #mega-page .rental-modal__cover {
+    display: none;
+  }
+  #mega-page .rental-modal__heading {
+    padding-top: 24px;
+    padding-right: 58px;
+  }
+}
+
+#mega-page .rental-modal .modal-close {
+  padding: 0;
+  color: var(--ink);
+}
+#mega-page .rental-modal__close-icon {
+  display: block;
+}
+
+
+#mega-page .room-details__photo {
+  min-width: 0;
+  overflow: hidden;
+  touch-action: pan-y;
+}
+#mega-page .room-details__track {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition-property: transform;
+}
+#mega-page .room-details__slide {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  flex: 0 0 100%;
+}
+#mega-page .room-details__slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#mega-page .room-details__photo .swiper-notification {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+}
